@@ -16,8 +16,8 @@ const userController = {
 
     getAll: async (req, res ) => {
         try {
-            // const usuarios = await userModel.find();
-            // res.json(usuarios)
+            const usuarios = await userModel.find();
+            res.json(usuarios)
             res.status(200).json({ message: 'Entrou no try!' });
         } catch (error) {
             res.status(500).json({ message: 'Erro ao buscar usuários' });
