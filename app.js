@@ -9,17 +9,14 @@ app.use(express.json())
 
 //DB connection
 
-const conn = require("./db/conn")
+const conn = require("./src/db/conn")
 
 conn()
 
 //Routes 
-const routes = require("./routes/router")
+const routes = require("./src/routes/router")
 
 app.use("/api", routes)
 
 
-app.listen(3000, function() {
-    console.log('Servidor funcionando!')
-})
-
+module.exports = app;

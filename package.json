@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node --no-warnings src/server.js",
+    "dev": "nodemon --no-warnings src/server.js "
   },
   "keywords": [],
   "author": "",
